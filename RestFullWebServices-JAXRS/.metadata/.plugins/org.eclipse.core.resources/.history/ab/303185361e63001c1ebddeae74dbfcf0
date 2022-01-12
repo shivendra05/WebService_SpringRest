@@ -1,0 +1,9 @@
+package com.nit.utility;
+
+
+public class DBConnection {
+
+	public static void createConnection() {
+		
+	}
+}

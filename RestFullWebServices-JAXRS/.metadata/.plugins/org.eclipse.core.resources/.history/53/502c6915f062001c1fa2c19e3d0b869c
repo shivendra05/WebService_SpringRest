@@ -1,0 +1,19 @@
+<html>
+<body>
+<h2>WELCOME TO NARESH IT</h2>
+
+<form action="" method="post">
+
+<pre>
+
+Student ID   <input type="text" name= "sid">
+Student Name <input type="text" name= "sname">
+Course       <input type="text" name= "course">
+Course Fee   <input type="text" name= "fee">
+Student ID <input type="text" name= sid>
+
+
+</pre>
+</form>
+</body>
+</html>

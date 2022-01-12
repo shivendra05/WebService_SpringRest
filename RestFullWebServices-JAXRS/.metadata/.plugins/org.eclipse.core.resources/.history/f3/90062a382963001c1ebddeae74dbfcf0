@@ -1,0 +1,9 @@
+package com.nit.controller;
+
+import javax.ws.rs.Path;
+
+@Path("/Product")
+public class ProductRestController {
+
+	
+}

@@ -1,0 +1,33 @@
+package com.nit.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.nit.consumer.StudentConsumer;
+
+import in.app.model.Student;
+
+@WebServlet("/student")
+public class StudentControllerServlet extends HttpServlet {
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		int sid =Integer.parseInt(req.getParameter("sid"));
+		String sname = req.getParameter("sname");
+		String course = req.getParameter("course");
+		Double fee = Double.parseDouble(req.getParameter("fee")) ;
+
+		Student stud =  new Student(sid,sname,course,fee);
+
+StudentConsumer.saveStudent(stud);
+
+
+		super.doPost(req, resp);
+	}
+}

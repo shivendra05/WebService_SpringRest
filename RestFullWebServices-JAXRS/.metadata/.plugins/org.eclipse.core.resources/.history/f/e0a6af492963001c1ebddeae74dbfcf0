@@ -1,0 +1,15 @@
+package com.nit.controller;
+
+import javax.inject.Inject;
+import javax.ws.rs.Path;
+
+import com.nit.service.IProductService;
+
+@Path("/Product")
+public class ProductRestController {
+
+	@Inject
+	private IProductService service;
+	
+	
+}

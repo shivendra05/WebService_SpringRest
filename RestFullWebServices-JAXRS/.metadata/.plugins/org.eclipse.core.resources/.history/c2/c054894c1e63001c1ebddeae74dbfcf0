@@ -1,0 +1,12 @@
+package com.nit.utility;
+
+import com.mysql.cj.xdevapi.SessionFactory;
+
+public class DBConnection {
+
+	public static SessionFactory session;
+	
+	public static void createConnection() {
+		
+	}
+}

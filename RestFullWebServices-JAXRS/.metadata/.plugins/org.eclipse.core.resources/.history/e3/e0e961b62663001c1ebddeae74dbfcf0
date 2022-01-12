@@ -1,0 +1,5 @@
+package com.nit.utility;
+
+public interface IProductDAO {
+
+}

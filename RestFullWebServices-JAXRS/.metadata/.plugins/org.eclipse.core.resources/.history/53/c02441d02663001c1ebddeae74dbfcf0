@@ -1,0 +1,15 @@
+package com.nit.utility;
+
+import java.util.List;
+
+import com.nit.model.Product;
+
+public interface IProductDAO {
+
+	public Integer saveProduct(Product prod);
+	public void updateProduct(Product prod);
+	public void deleteProduct(Product prod);
+	
+	public Product getProductByID(Product prod);
+	public List<Product> getAllProduct(Product prod);
+}

@@ -1,0 +1,41 @@
+package com.nit.service;
+
+import java.util.List;
+
+import com.nit.model.Product;
+
+public class IProductServiceImpl implements IProductService {
+
+	@Override
+	public Integer saveProd(Product prod) {
+
+		prod.getPcost()*10/100;
+		
+		return null;
+	}
+
+	@Override
+	public void updateProd(Product prod) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteProd(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Product getProdByID(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getAllProd() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

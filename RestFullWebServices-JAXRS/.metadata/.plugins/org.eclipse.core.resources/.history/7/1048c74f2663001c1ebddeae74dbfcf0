@@ -1,0 +1,11 @@
+package com.nit.model;
+
+public class Product {
+
+	private Integer pid;
+	private String pcode;
+	private double pcost;
+	private Integer pid;
+	private Integer pid;
+	
+}

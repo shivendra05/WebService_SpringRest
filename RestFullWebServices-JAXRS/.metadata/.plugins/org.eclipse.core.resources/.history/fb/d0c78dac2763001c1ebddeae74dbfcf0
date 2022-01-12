@@ -1,0 +1,54 @@
+package com.nit.dao;
+
+import java.util.List;
+
+import javax.transaction.Transaction;
+
+import org.hibernate.Session;
+
+import com.nit.model.Product;
+import com.nit.utility.DBConnection;
+
+public class IProductDAOImpl implements IProductDAO {
+
+	@Override
+	public Integer saveProduct(Product prod) {
+		Session sess=  DBConnection.getSession().openSession();
+		Transaction tx=null;
+		try(sess) {
+			
+		}catch (Exception e) {
+
+
+
+		}
+
+
+		return null;
+	}
+
+	@Override
+	public void updateProduct(Product prod) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteProduct(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Product getProductByID(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getAllProduct() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.nit.utility;
+
+import com.nit.model.Product;
+
+public interface IProductDAO {
+
+	public Integer saveProduct(Product prod);
+	public void updateProduct(Product prod);
+	public void deleteProduct(Product prod);
+	
+	public Product getProductByID(Product prod);
+	public int saveProduct(Product prod);
+}

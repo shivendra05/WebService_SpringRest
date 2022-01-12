@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+F:\RestFullWebServices-JAXRS\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

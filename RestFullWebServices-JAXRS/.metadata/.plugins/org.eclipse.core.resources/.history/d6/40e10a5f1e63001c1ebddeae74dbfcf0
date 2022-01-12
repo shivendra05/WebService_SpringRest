@@ -1,0 +1,18 @@
+package com.nit.utility;
+
+import org.hibernate.cfg.Configuration;
+
+import com.mysql.cj.xdevapi.SessionFactory;
+
+public class DBConnection {
+
+	public static SessionFactory session;
+	
+	public static void createConnection() {
+		try {
+		session = new Configuration().configure().buildSessionFactory();
+		}catch (Exception e) {
+			// TODO: handle exception
+		}	
+	}
+}

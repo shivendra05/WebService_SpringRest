@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="32">
+    <list key="modules" value0="28_JAXRSJersey_Annotation_HK2_LayerdApplication_mysql::org.eclipse.jst.jee.server:28_JAXRSJersey_Annotation_HK2_LayerdApplication_mysql::jst.web::4.0" value1="28_JAXRSJersey_Annotation_HK2_LayerdApplication_mysql_Consumer::org.eclipse.jst.j2ee.server:28_JAXRSJersey_Annotation_HK2_LayerdApplication_mysql_Consumer::jst.web::2.3" value2="29_JAXRSJersey_MiniProj_Hibernate_mysql::org.eclipse.jst.jee.server:29_JAXRSJersey_MiniProj_Hibernate_mysql::jst.web::4.0"/>
+  </server>
+</servers>
