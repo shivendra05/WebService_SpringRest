@@ -1,0 +1,18 @@
+per:
+ info:
+  id: 21
+  name: shiv
+  age: 32
+  #ifsc code
+  ifsc:
+   - SBIBS98438
+   - ICICI98438
+   #account details
+  account:
+   sbi: 34698438
+   ICICI: 21324354
+   
+  details:
+   did: 32178
+   dname: Nest Apartment
+   daddr: Ameerpet

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="shivendra"
+		class="com.injection.Employeeconstructor-argInheritance"
+		abstract="true">
+		<constructor-arg name="eno" value="101" />
+		<constructor-arg name="ename" value="shivendra" />
+		<constructor-arg name="aadhar" value="214378793212" />
+		<constructor-arg name="drivingLicense"
+			value="KLJDS3234" />
+		<constructor-arg name="address" value="Ravindra Nagar" />
+		<constructor-arg name="age" value="32" />
+	</bean>
+
+	<bean id="shiv" class="com.injection.EmployeePropertyInheritance"
+		parent="shivendra">
+		<constructor-arg name="carName" value="Maruti" />
+		<constructor-arg name="carType" value="Normal" />
+		<constructor-arg name="engineCC" value="2120CC" />
+		<constructor-arg name="enginType" value="Petrol" />
+	</bean>
+
+	<bean id="shibbu"
+		class="com.injection.EmployeePropertyInheritance" parent="shivendra">
+		<constructor-arg name="carName" value="Mahindra" />
+		<constructor-arg name="carType"
+			value="Normal+Hackback" />
+		<constructor-arg name="engineCC" value="21000CC" />
+		<constructor-arg name="enginType" value="Gas" />
+	</bean>
+</beans>        

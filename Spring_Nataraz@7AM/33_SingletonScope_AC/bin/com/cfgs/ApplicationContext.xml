@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Dependent bean -->
+	<bean id="dt" class="java.util.Date" />
+
+	<!-- Target bean, Singleton is default bean scope and this scope doesnt make a class as singleton-->
+	<bean id="msg" class="com.bean.WishMessage" scope="singleton">
+		<constructor-arg name="date" ref="dt" />
+	</bean>
+
+	<bean id="msg1" class="com.bean.WishMessage" scope="prototype">
+		<constructor-arg name="date" ref="dt" />
+	</bean>
+	<bean id="msg2" class="com.bean.WishMessage" scope="prototype">
+		<constructor-arg name="date" ref="dt" />
+	</bean>
+</beans>        

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Dependent Bean class -->
+	<bean id="blue" class="com.payment.BlueDart"/>
+	<bean id="dtdc" class="com.payment.DTDC"/>
+	<bean id="indianPost" class="com.payment.IndianPost"/>
+
+	<!-- Target bean class -->
+	<bean id="flpk" class="com.flipkart.FlipKart">
+		<!-- <property name="payment" ref="blue"/> -->
+		<constructor-arg ref="blue"/>
+	</bean>
+	
+</beans>

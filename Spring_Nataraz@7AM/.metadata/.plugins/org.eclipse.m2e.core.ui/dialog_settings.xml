@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="F:\Spring_Nataraz@7AM\73_100PCode_SpringJDBC_jdbcTemplate_Profile"/>
+			<item value="F:\Spring_Nataraz@7AM\65_SpringJDBC_jdbcTemplate_DirectMethod\pom.xml"/>
+			<item value="F:\Spring_Nataraz@7AM\60_SpringBoot_WishMessageGenerator"/>
+			<item value="F:\Spring_Nataraz@7AM\50_MethodRepancer"/>
+			<item value="F:\Spring_Nataraz@7AM\44_AwareInjection_Annotation"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com._AspectjAPO_AfterAdvice"/>
+			<item value="com.test"/>
+			<item value="com.cfgs"/>
+			<item value="com.beans"/>
+			<item value="com._100PCode_wWishMessage"/>
+			<item value="com._FactoryBean"/>
+			<item value="com._MethodRepancer"/>
+			<item value="com._P_C_NameSpace"/>
+			<item value="com"/>
+			<item value="com._I18n"/>
+			<item value="com._CollectionInjection"/>
+		</list>
+		<list key="groupId">
+			<item value="com"/>
+		</list>
+		<list key="artifactId">
+			<item value="78_AspectjAPO_AfterAdvice"/>
+			<item value="77_AspectjAOP_SecurityCheck"/>
+			<item value="76_AspectJAOP_AuditBeforeAdvice"/>
+			<item value="75_AspectAOP_AroundAdvice_Logging"/>
+			<item value="74_AspectjAPO_AroundAdvice"/>
+			<item value="66_SpringJDBC_JDBCTemplate_CallebleInterface"/>
+			<item value="62_SpringJDBC_jdbcTemplate_DirectMethod_xml"/>
+			<item value="53_100PCode_wWishMessage"/>
+			<item value="52_FactoryBean"/>
+			<item value="50_MethodRepancer"/>
+			<item value="45_LMI_Problem"/>
+			<item value="37_MiniProject_NestedContainer"/>
+			<item value="36_P_C_NameSpace"/>
+			<item value="35_I18n"/>
+			<item value="18_NullInjection"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="18_NullInjection"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,4 @@
+CREATE TABLE customer(cno int,cname varchar(20) ,cadd varchar(20) ,pamount float ,intamount  float);
+
+-----------
+create sequence custNo start with 1 increment by 1; 

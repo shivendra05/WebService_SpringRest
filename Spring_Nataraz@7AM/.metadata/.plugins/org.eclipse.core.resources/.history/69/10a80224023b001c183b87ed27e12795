@@ -1,0 +1,18 @@
+package com.repo;
+
+import java.util.Collection;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.entity.CustomerDetails;
+
+public interface CustomerRepo extends JpaRepository<CustomerDetails,Integer> {
+
+	
+	interface QuerySearchResults{
+		void getAddr();
+		void getname();
+	}
+	public List<CustomerDetails> findByCadd(String cadd);
+}

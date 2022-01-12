@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-merge="false"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="cseEngineering" class="com.injection.StudentCourses"
+		abstract="true">
+		<property name="courses">
+			<set>
+				<value>M1</value>
+				<value>Communication</value>
+				<value>Graphics</value>
+				<value>Machenics</value>
+			</set>
+		</property>
+	</bean>
+
+	<!-- bean without id -->
+	<bean class="com.injection.StudentCourses" parent="cseEngineering">
+		<property name="courses">
+			<set merge="default">
+				<!-- <set> -->
+				<value>Digital Communication</value>
+				<value>Electonics</value>
+			</set>
+		</property>
+	</bean>
+
+</beans>        

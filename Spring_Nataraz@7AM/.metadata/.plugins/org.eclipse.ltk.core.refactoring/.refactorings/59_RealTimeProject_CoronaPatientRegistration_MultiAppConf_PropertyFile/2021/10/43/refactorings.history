@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;58_RealTimeProject_CoronaPatientRegistration_MultiAppConf_PropertyFile/src/main/java/com/commons/DataSourceProperty.properties&apos; to &apos;app.properties&apos;" description="Rename resource &apos;DataSourceProperty.properties&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/commons/DataSourceProperty.properties" name="app.properties" stamp="1634553393995" updateReferences="true"/>
+</session>

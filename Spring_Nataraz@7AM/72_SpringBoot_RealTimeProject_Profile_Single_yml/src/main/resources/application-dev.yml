@@ -1,0 +1,7 @@
+spring:
+ datasource:
+  url: jdbc:mysql:///shivdata
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  username: root
+  password: shiv
+  type: com.mchange.v2.c3p0.ComboPooledDataSource

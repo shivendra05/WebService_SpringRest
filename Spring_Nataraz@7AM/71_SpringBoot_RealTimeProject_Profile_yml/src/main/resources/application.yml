@@ -1,0 +1,47 @@
+spring:
+ profile: dev
+ datasource:
+  url: jdbc:mysql:///shivdata
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  username: root
+  password: shiv
+  type: com.mchange.v2.c3p0.ComboPooledDataSource
+  
+#Oracle DataBase Configuration(Oracle+Hikari)
+---
+spring: 
+ profile: prod
+ datasource:
+  driver-class-name: oracle.jdbc.driver.OracleDriver
+  url: jdbc:oracle:thin:@localhost:1521:orcl
+  username: system
+  password: shiv
+  
+  hikari:
+   connection-timeout: 60000
+   maximum-pool-size: 30  
+   
+---   
+#Oracle DataBase Configuration(Oracle+dbcp)
+spring:
+ profile: test
+ datasource:
+  driver-class-name: oracle.jdbc.driver.OracleDriver
+  url: jdbc:oracle:thin:@localhost:1521:orcl
+  username: system
+  password: shiv
+  type: org.apache.commons.dbcp2.BasicDataSource
+  
+---    
+#MySQL DataBase Configuration (MySQL+Hikari)
+spring:
+ profile: test
+ datasource:
+  url: jdbc:mysql:///shivdata
+  driver-class-name: com.mysql.jdbc.Driver
+  username: root
+  password: shiv
+  
+  hikari:
+   connection-timeout: 60000
+   maximum-pool-size: 30  

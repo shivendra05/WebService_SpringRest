@@ -1,0 +1,11 @@
+package com.service;
+
+import java.util.List;
+
+import com.dto.CustomerDTO;
+import com.entity.CustomerDetails;
+
+public interface CustomerService {
+
+	public String getCustomerDetails(CustomerDTO dto);
+}

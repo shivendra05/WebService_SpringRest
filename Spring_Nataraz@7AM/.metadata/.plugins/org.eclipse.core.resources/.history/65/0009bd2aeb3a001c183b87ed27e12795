@@ -1,0 +1,11 @@
+package com.service;
+
+import java.util.List;
+
+import com.entity.CustomerDetails;
+
+public interface CustomerService {
+
+
+public List<CustomerDetails> getCustomer(String addr);
+}

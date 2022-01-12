@@ -1,0 +1,29 @@
+package com;
+
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.repo.CustomerRepo;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) throws Exception {
+		ApplicationContext ctx= null;
+		CustomerRepo custRepo = null;
+		ctx= SpringApplication.run(Application.class, args);
+		custRepo = ctx.getBean(CustomerRepo.class);
+		List<E>
+		try {
+			System.out.println("--------------Find by Cadd-----------");
+			custRepo.findBycno(41).forEach(	System.out::println);
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		((ConfigurableApplicationContext) ctx).close();
+	}
+}

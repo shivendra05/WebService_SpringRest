@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="75_AspectAOP_AroundAdvice_Logging"/>
+<aop-project name="77_AspectjAOP_SecurityCheck"/>
+<aop-project name="74_AspectjAPO_AroundAdvice"/>
+<aop-project name="84_SpringDataJPA_JPARepository_QueryMehtods"/>
+<aop-project name="76_AspectJAOP_AuditBeforeAdvice"/>
+</aop-reference-model>

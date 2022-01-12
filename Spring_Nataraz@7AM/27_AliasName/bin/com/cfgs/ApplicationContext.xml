@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	<!-- Dependent bean -->
+	<bean id="date" class="java.util.Date" />
+	
+	<!-- Target bean -->
+	<bean id="WishMessage" name="msg1,msg2" class="com.bean.WishMessage">
+		<property name="date" ref="date" />
+	</bean>
+	
+	<alias name="WishMessage" alias="wish"/>
+	<alias name="wish" alias="wish1"/>
+	<alias name="msg2" alias="wish2"/>
+</beans>        

@@ -1,0 +1,21 @@
+package com.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import org.hibernate.annotations.Type;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class CustomerDetails {
+	@Id
+	@Type(type = "int")
+	@GeneratedValue
+	Integer cno;
+	String cname;
+	String caddr;
+	Double billAmount;
+}

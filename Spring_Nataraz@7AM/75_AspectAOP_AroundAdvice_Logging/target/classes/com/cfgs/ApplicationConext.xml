@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<!-- Bean Service -->
+	<bean id="service" class="com.service.BankService" />
+
+	<!-- Configure Aspect -->
+	<bean id="logAspect" class="com.aspect.LoggingAspect" />
+
+	<aop:config>
+		<aop:pointcut
+			expression="execution(float com.service.BankService.calInterest(..))"
+			id="cutpoint" />
+		<aop:aspect ref="logAspect">
+			<aop:around method="logging" pointcut-ref="cutpoint" />
+		</aop:aspect>
+	</aop:config>
+</beans>

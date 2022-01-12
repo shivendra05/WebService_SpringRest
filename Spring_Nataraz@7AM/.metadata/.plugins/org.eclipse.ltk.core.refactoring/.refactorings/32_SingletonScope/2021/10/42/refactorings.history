@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy source folder &apos;src&apos; to &apos;33_ApplicationContext&apos;&#x0D;&#x0A;- Original project: &apos;32_SingletonScope&apos;&#x0D;&#x0A;- Destination element: &apos;33_ApplicationContext&apos;&#x0D;&#x0A;- Original element: &apos;32_SingletonScope/src&apos;" description="Copy source folder" element1="/src" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1634118154568" target="/33_ApplicationContext" version="1.0"/>
+</session>

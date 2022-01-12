@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="hikariDS" class="com.zaxxer.hikari.HikariDataSource">
+		<property name="driverClassName"
+			value="oracle.jdbc.driver.OracleDriver" />
+		<property name="username" value="system" />
+		<property name="password" value="shiv" />
+		<property name="jdbcUrl"
+			value="jdbc:oracle:thin:@localhost:1521:orcl" />
+		<property name="minimumIdle" value="10" />
+		<property name="maximumPoolSize" value="20" />
+		<property name="connectionTimeout" value="2000" />
+	</bean>
+
+	<bean id="dao" class="com.dao.EmployeeDAOImpl">
+		<constructor-arg ref="hikariDS" />
+	</bean>
+	
+	<bean id="service" class="com.service.EmployeeServiceImpl">
+		<constructor-arg ref="dao" />
+	</bean>
+	
+</beans>

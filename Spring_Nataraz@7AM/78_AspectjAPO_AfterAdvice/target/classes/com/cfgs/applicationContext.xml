@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<!-- target Class bean -->
+	<bean id="shop" class="com.service.UserShopping" />
+
+	<!-- Aspect class -->
+	<bean id="coupAspect" class="com.aspect.CouponeAspect" />
+
+	<aop:config>
+		<aop:pointcut
+			expression="execution(* com.service.UserShopping.shopping(..))" id="jpc" />
+		<aop:aspect ref="coupAspect">
+			<aop:after-returning method="couponGeneration" returning="billAmount" pointcut-ref="jpc"/>
+		</aop:aspect>
+	</aop:config>
+</beans>

@@ -1,0 +1,8 @@
+package com.entity;
+
+public class CustomerDetails {
+	Integer cno;
+	String cname;
+	String caddr;
+	Double billAmount;
+}

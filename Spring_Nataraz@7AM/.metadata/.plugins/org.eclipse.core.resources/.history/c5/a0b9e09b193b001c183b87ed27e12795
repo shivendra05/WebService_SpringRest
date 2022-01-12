@@ -1,0 +1,10 @@
+package com.dto;
+
+
+public class CustomerDTO {
+
+	private Integer cno;
+	private String cname;
+	private String cadd;
+	private Double billAmount;
+}

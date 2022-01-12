@@ -1,0 +1,8 @@
+#Oracle DataBase Configuration(Oracle+dbcp)
+spring:
+ datasource:
+  driver-class-name: oracle.jdbc.driver.OracleDriver
+  url: jdbc:oracle:thin:@localhost:1521:orcl
+  username: system
+  password: shiv
+  type: org.apache.commons.dbcp2.BasicDataSource

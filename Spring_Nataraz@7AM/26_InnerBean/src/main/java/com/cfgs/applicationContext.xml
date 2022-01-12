@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-merge="false"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student1" class="com.injection.Collage">
+		<constructor-arg name="result">
+			<bean id="stud1" class="com.injection.StudentResult" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="student2" class="com.injection.Collage">
+		<constructor-arg name="result">
+			<bean class="com.injection.StudentResult" /><!-- Bean is optional since not going to be referred -->
+		</constructor-arg>
+	</bean>
+</beans>        

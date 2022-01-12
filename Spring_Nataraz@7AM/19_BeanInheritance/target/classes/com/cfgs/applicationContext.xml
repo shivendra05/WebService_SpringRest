@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="shivendra"
+		class="com.injection.EmployeePropertyInheritance">
+		<property name="eno" value="101" />
+		<property name="ename" value="shivendra" />
+		<property name="aadhar" value="214378793212" />
+		<property name="drivingLicense" value="KLJDS3234" />
+		<property name="address" value="Ravindra Nagar" />
+		<property name="age" value="32" />
+		<property name="carName" value="Suzuki" />
+		<property name="carType" value="hackback" />
+		<property name="engineCC" value="2000CC" />
+		<property name="enginType" value="disel" />
+	</bean>
+
+	<bean id="shiv" class="com.injection.EmployeePropertyInheritance"
+		parent="shivendra">
+		<property name="carName" value="Maruti" />
+		<property name="carType" value="Noremal" />
+		<property name="engineCC" value="2120CC" />
+		<property name="enginType" value="Petrol" />
+	</bean>
+	
+</beans>        

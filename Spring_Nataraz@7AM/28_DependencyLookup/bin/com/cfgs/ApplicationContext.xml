@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Dependent bean -->
+	<bean id="bean" class="com.bean.Engine" />
+
+	<!-- target bean -->
+	<bean id="vehicle" class="com.bean.Vehicle">
+		<!-- <constructor-arg value="bean" /> -->
+		<constructor-arg><idref bean="bean"/></constructor-arg>
+	</bean>
+
+</beans>        

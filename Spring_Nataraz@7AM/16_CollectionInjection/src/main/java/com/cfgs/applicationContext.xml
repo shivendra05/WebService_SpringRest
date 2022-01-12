@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="dob" class="java.util.Date">
+		<property name="year" value="210" />
+		<property name="month" value="10" />
+		<property name="date" value="21" />
+	</bean>
+	<bean id="dateToday" class="java.util.Date" />
+	<bean id="array" class="com.array.StudentMarks">
+		<property name="marks">
+			<array>
+				<value>20</value>
+				<value>10</value>
+				<value>8</value>
+				<value>1</value>
+			</array>
+		</property>
+		<property name="date">
+			<array>
+				<ref bean="dob" />
+				<ref bean="dateToday" />
+			</array>
+		</property>
+	</bean>
+	<bean id="list" class="com.list.StudentDetails">
+		<property name="details">
+			<list>
+				<value>Shivendra</value>
+				<value>32</value>
+				<value>IT</value>
+				<value>NITTTR</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="set" class="com.set.StudentContactDetails">
+		<property name="number">
+			<set>
+				<value>8329409565</value>
+				<value>7509814043</value>
+				<value>7509814043</value>
+			</set>
+		</property>
+		<property name="dates">
+			<set>
+				<ref bean="dob" />
+				<ref bean="dateToday" />
+			</set>
+		</property>
+	</bean>
+	<bean id="map" class="com.map.EmployeeLife">
+		<property name="vegitables">
+			<map>
+				<entry key="Apple" value="2" />
+				<entry key="Mango" value="5" />
+				<entry key="Banana" value="4" />
+				<entry key="pomagrante" value="2" />
+			</map>
+		</property>
+		<property name="facultyDetails">
+			<map>
+				<entry>
+					<key>
+						<value>1</value>
+					</key>
+					<ref bean="dob" />
+				</entry>
+				<entry key="2" value-ref="dateToday" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="prop" class="com.prop.Fruits">
+		<property name="fruits">
+			<props>
+				<prop key="Apple">Red</prop>
+				<prop key="Apple">green</prop>
+				<prop key="Banana">Yellow</prop>
+				<prop key="Papaya">Yellow</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

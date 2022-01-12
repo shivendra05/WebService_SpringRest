@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="doj" class="java.util.Date">
+		<property name="year" value="110" />
+		<property name="month" value="11" />
+		<property name="date" value="9" />
+	</bean>
+
+	<bean id="dob" class="java.util.Date">
+		<property name="year" value="110" />
+		<property name="month" value="11" />
+		<property name="date" value="9" />
+	</bean>
+
+	<bean id="dom" class="java.util.Date">
+		<property name="year" value="110" />
+		<property name="month" value="11" />
+		<property name="date" value="9" />
+	</bean>
+
+	<bean id="shivendra" class="com.injection.EmployeeDetails">
+		<constructor-arg value="100" />
+		<constructor-arg value="shivendra" />
+		<constructor-arg ref="doj" />
+		<constructor-arg ref="dob" />
+		<constructor-arg ref="dom" />
+	</bean>
+
+
+	<bean id="shiv" class="com.injection.EmployeeDetails">
+		<constructor-arg value="100" />
+		<constructor-arg value="shivendra" />
+		<constructor-arg><null/></constructor-arg>
+		<constructor-arg><null/></constructor-arg>
+		<constructor-arg ref="dom" />
+	</bean>
+
+
+</beans>        
