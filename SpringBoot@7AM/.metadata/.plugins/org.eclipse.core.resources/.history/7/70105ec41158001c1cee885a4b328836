@@ -1,0 +1,20 @@
+package com.example.employee;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/employee")
+public class EmployeeDetails {
+
+	//request Parameter
+	
+	public ResponseEntity<String> getRequestParam(
+			
+			){
+		
+		
+		ResponseEntity<String> res = new ResponseEntity<String>();
+	}
+}

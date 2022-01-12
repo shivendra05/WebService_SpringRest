@@ -1,0 +1,4 @@
+#client port
+server.port=7799
+
+eureka.client.register-with-eureka=true

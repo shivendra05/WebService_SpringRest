@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1" isELIgnored="false"%>
+<%@taglib prefix="l" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Bmazon Shopping</h1>
+	<h3>Number Product Records are available</h3>${rowsCount}
+	<br> ${ProdId},
+	<br> ${UserData}
+
+	<table>
+		<thead>
+			<tr>
+				<th>Product ID</th>
+				<th>Product Name</th>
+				<th>Product Price</th>
+				<th>Product Quantity</th>
+				<th>Product GST</th>
+				<th>Product Tital Bill</th>
+			</tr>
+		</thead>
+		<tbody>
+			<l:forEach items="${prodListData}" var="obj">
+				<tr>
+					<td>${obj.pID }</td>
+					<td>${obj.pName }</td>
+					<td>${obj.pQty }</td>
+					<td>${obj.price }</td>
+					<td>${obj.bill }</td>
+					<td>${obj.gst }</td>
+				</tr>
+			</l:forEach>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,7 @@
+package com.example.service;
+
+public interface ProductService {
+
+	public String inserData();
+	public String inserData();
+}

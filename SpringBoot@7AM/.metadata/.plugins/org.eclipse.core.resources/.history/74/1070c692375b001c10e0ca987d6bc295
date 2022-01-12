@@ -1,0 +1,10 @@
+package com.example.comsumer;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
+
+@Component
+@FeignClient
+public class StudentConsumer {
+
+}

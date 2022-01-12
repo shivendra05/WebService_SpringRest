@@ -1,0 +1,15 @@
+package com.example.controller;
+
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@EnableEurekaClient
+public class CompanyController {
+
+	
+	
+	public String compController() {
+		return "THIS IS OM ELECTRONICS ";
+	}
+}

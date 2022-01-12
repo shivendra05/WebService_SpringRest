@@ -1,0 +1,6 @@
+server.port=9090
+
+#NO PUBLISH
+eureka.client.register-with-eureka=false
+#NO FIND
+eureka.client.fetch-registry=false

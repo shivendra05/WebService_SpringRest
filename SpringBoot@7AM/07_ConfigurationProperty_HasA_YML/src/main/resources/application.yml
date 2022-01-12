@@ -1,0 +1,18 @@
+
+prod:
+  p:
+   pId: 100
+   pPrice: 1234.456
+   pName: pens
+   pStatus: True
+   addr:
+    - ravindra
+    - Near New Bus Stand
+    - Rewa
+    - 486001
+   ingredient:
+    col: 21.34
+    graphite: 43.2
+    rubber: 54.32
+    wood: 43.09
+   

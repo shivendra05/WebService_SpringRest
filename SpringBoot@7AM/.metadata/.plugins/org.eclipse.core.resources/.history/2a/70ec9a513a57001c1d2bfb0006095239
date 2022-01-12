@@ -1,0 +1,51 @@
+package com.example.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.model.Product;
+import com.example.repo.ProductRepository;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+
+	@Autowired
+	ProductRepository repo;
+
+	@Override
+	public String inserData(Product prod) {
+		System.out.println("ProductServiceImpl.inserData():: Service Save Data");
+		int qty = prod.getPQty();
+		double price = prod.getPrice();
+		
+		//Product cost calculation
+		double tltPrice = qty*price;
+		double gst = tltPrice*12/100;
+		double bill = gst+tltPrice;
+		
+		prod.setGst(gst);
+		prod.setBill(bill);
+
+		repo.save(prod);
+		System.out.println("******** Saved ***********");
+		return "Product Detial is saved";
+	}
+
+	@Override
+	public long getRowCount() {
+		long rowCount = repo.count();
+		return rowCount;
+	}
+
+	@Override
+	public List<Product> showAllData() {
+
+		
+		
+		
+		return null;
+	}
+
+}

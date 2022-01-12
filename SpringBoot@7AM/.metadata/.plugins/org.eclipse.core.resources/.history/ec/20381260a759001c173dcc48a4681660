@@ -1,0 +1,15 @@
+package com.example.config;
+
+import org.springframework.beans.factory.annotation.Configurable;
+
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@Configurable
+@EnableSwagger2
+public class SwaggerConfig {
+
+	public Docket createDocket() {
+		
+	}
+}

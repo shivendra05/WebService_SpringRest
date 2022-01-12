@@ -1,0 +1,41 @@
+package com.example.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.model.Student;
+import com.example.repositoty.StudentRepo;
+
+public class StudentImpl implements IStudent {
+
+	@Autowired
+	StudentRepo repo;
+
+	@Override
+	public String saveStudentDetails(Student stud) {
+		repo.save(stud);
+		return "Data Saved";
+	}
+
+	@Override
+	public Optional<Student> getStudentByID(int id) {
+		Optional<Student> obj= repo.findById(id);
+		return obj;
+	}
+
+	@Override
+	public String deleteStudentByID(int id) {
+		repo.deleteById(id);
+		return "Student Deleted ";
+	}
+
+	@Override
+	public List<Student> getAllStudent() {
+		List<Student> listStud = null;
+		listStud = repo.findAll();
+		return listStud;
+	}
+
+}

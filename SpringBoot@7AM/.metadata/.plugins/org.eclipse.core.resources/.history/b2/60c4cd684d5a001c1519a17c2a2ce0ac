@@ -1,0 +1,11 @@
+#client port
+server.port=7799
+#client regitry
+eureka.client.register-with-eureka=true
+#client fetch
+eureka.client.fetch-registry=true
+
+eureka.client.service-url.default-zone=http://localhost:7798/eureka
+
+
+spring.application.name=

@@ -1,0 +1,8 @@
+server.port=9089
+
+spring.application.name=COMPNAY-SERVICE
+
+eureka.client.register-with-eureka=true
+
+eureka.client.fetch-registry=true
+

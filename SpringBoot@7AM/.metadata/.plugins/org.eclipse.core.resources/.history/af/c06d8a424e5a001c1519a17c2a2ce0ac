@@ -1,0 +1,10 @@
+#client port
+server.port=9091
+#client regitry
+eureka.client.register-with-eureka=true
+#client fetch
+eureka.client.fetch-registry=true
+#client url
+eureka.client.service-url.default-zone=http://localhost:9090/eureka
+#client application name
+spring.application.name=PAYMENT-SERVICE

@@ -1,0 +1,7 @@
+package com.example.repositoty;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class StudentRepo implements JpaRepository<Student, Integer> {
+
+}

@@ -1,0 +1,5 @@
+server.port=9888
+
+spring.application.name=COURSE-SERVICE
+
+eureka.client.service-url.default-zone=

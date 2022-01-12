@@ -1,0 +1,5 @@
+server.port=9877
+
+spring.application.name=company-service
+
+

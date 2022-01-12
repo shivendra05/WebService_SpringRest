@@ -1,0 +1,8 @@
+package com.example.registry;
+
+public class RegisterDriver {
+
+	public void register() {
+		
+	}
+}

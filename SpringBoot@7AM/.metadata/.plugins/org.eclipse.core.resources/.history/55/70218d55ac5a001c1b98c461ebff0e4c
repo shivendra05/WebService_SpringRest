@@ -1,0 +1,10 @@
+
+server.port=9997
+
+eureka.client.register-with-eureka=true
+
+eureka.client.fetch-registry=true
+
+spring.application.name=QUOTE-SERVICE
+
+eureka.instance.instance-id=${spring.application.name}

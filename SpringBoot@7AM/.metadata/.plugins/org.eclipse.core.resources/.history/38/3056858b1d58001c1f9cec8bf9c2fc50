@@ -1,0 +1,10 @@
+package com.example.model;
+
+
+public class Student {
+
+	
+	private String studName;
+	private Integer age;
+	private String grade;
+}

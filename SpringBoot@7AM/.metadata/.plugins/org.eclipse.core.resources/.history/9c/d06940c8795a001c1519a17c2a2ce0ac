@@ -1,0 +1,17 @@
+package com.example.registry;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.netflix.discovery.DiscoveryClient;
+
+@Component
+public class PaymentConsumer {
+
+	@Autowired
+	DiscoveryClient client;
+	
+	public void payConsumer() {
+		List<E>client.getInstancesById("PAYMENT-SERVICE");
+	}
+}

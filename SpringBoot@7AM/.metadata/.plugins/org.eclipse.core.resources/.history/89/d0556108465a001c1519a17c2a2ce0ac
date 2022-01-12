@@ -1,0 +1,4 @@
+server.port=7798
+
+spring.mvc.publish-request-handled-events=false
+eureka.client.fetch-registry=false

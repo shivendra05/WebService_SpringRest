@@ -1,0 +1,12 @@
+package com.example.registry;
+
+import com.netflix.discovery.DiscoveryClient;
+
+public class PaymentConsumer {
+
+	DiscoveryClient client;
+	
+	public void payConsumer() {
+		
+	}
+}

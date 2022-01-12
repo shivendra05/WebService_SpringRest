@@ -1,0 +1,23 @@
+package com.example.consumer;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
+import org.springframework.stereotype.Component;
+
+@Component
+public class QuoteConsumer {
+
+	@Autowired
+	private	LoadBalancerClient client;
+	
+	public String getQuote() {
+		
+		ServiceInstance instance= client.choose("QUOTE-SERVICE");
+		
+		
+		 instance.getUri()+"/quote";
+		
+		return "";
+	}
+}

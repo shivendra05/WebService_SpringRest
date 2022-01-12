@@ -1,0 +1,6 @@
+
+server.port=9088
+
+spring.application.name=COURSE-NAME
+
+eureka.client.service-url.

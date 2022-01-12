@@ -1,0 +1,7 @@
+#client port
+server.port=7799
+#client regitry
+eureka.client.register-with-eureka=true
+#client fetch
+eureka.client.fetch-registry=true
+

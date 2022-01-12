@@ -1,0 +1,9 @@
+server.port=8888
+
+eureka.client.register-with-eureka=true
+
+eureka.client.fetch-registry=true
+
+eureka.client.service-url.default-zone=
+
+eureka.client.service-url.

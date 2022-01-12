@@ -1,0 +1,3 @@
+server.port=20201
+spring.h2.console.enabled=true
+

@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1" isELIgnored="false"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Bmazon Shopping</h1>
+	<form action="userRegister" method="post">
+		<pre>
+		Product ID 			<input type="text" name="pID"> 
+		Product Name 		<input type="text" name="pName"> 
+		Product Quantity	<input type="text" name="pQty"> 
+		Product Price 		<input type="text" name="price">
+		<button type="submit">Click To Submit</button>
+		</pre>
+	</form>
+	${ProdId},
+	${UserData}
+</body>
+</html>

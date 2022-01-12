@@ -1,0 +1,42 @@
+package com.example.employee;
+
+import javax.websocket.server.PathParam;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/employee")
+public class EmployeeDetails {
+
+	//request Parameter
+	@GetMapping("/find")
+	public ResponseEntity<String> getRequestParam(
+			@RequestParam("name") String name,
+			@RequestParam("age") int age
+			){
+
+		String body = "Employee Data:: name="+ name+" age="+age;
+
+		ResponseEntity<String> res = new ResponseEntity<String>(body,HttpStatus.OK);
+		return res;
+	}
+	
+	//path Parameter
+		@GetMapping("/rollNumber/{roll}/{year}")
+		public ResponseEntity<String> getPathParam(
+				@PathVariable("roll") int name,
+				@PathVariable("year") int age
+				){
+
+			String body = "Employee Data:: name="+ name+" age="+age;
+
+			ResponseEntity<String> res = new ResponseEntity<String>(body,HttpStatus.OK);
+			return res;
+		}
+}

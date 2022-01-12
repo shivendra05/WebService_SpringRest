@@ -1,0 +1,21 @@
+package com.example.registry;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.stereotype.Component;
+
+import com.netflix.appinfo.InstanceInfo;
+import com.netflix.discovery.DiscoveryClient;
+
+@Component
+public class PaymentConsumer {
+
+	@Autowired
+	DiscoveryClient client;
+	
+	public void payConsumer() {
+		List<InstanceInfo>  discoveryClient= client.getInstances("PAYMENT-SERVICE");
+	}
+}

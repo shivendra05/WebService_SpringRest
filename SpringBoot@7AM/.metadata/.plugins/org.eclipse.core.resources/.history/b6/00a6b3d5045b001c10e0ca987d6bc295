@@ -1,0 +1,15 @@
+package com.example.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CourseController {
+
+	public String getTechnicalCourses() {
+		return "";
+	}
+	
+	public String getNonTechnicalCourses() {
+		return "";
+	}
+}

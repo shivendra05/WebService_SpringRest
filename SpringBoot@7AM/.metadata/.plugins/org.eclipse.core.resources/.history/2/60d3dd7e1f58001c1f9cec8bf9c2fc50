@@ -1,0 +1,10 @@
+package com.example.service;
+
+import com.example.model.Student;
+
+public interface IStudent {
+
+	public String saveStudentDetails(Student stud);
+	public Student getStudentByID(int id);
+	public Integer
+}

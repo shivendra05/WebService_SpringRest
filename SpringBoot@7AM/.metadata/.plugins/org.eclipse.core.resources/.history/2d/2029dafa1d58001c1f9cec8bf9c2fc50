@@ -1,0 +1,4 @@
+#server port Number
+server.port=9098
+
+#MySQL DB Detsils

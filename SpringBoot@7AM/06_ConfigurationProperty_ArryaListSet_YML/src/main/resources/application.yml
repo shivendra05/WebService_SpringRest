@@ -1,0 +1,15 @@
+
+stud:
+  s-id: 100
+  sName: shivendra
+  s-age: 32
+  subj:
+    - Math
+    - Science
+    - Chemestry
+    - Physics
+  marks:
+    math: 21
+    Physics: 32
+    Chemestry: 42
+    English: 52

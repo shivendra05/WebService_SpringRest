@@ -1,0 +1,5 @@
+
+server.port=5555
+
+zuul.routes.employee.path=/employee/data/**
+zuul.routes.employee.service-id=EMPLOYEE-SERVICE

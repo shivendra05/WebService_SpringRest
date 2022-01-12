@@ -1,0 +1,13 @@
+package com.example.consumer;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class CompanyConsumer {
+
+	
+	public String vendorConsume() {
+		
+		return "";
+	}
+}

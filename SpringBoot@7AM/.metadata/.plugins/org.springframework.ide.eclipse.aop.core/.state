@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="01_ConfigurationProperty"/>
+<aop-project name="33_MS_FeignClient_StudentClient_Consumer"/>
+<aop-project name="03_ConfigurationProperty_MapProperty"/>
+<aop-project name="36_MS_EmployeeService_Producer"/>
+<aop-project name="02_ConfigurationProperty_ArraySetList"/>
+<aop-project name="06_ConfigurationProperty_ArryaListSet_YML"/>
+<aop-project name="36_MS_Employee_Server"/>
+<aop-project name="18_MVC_ModelData"/>
+<aop-project name="04_ConfigurationProperty_HasA"/>
+<aop-project name="08_ConfigurationProperty_HasA_Lambok_YML"/>
+<aop-project name="36_MS_Zuul_Server"/>
+</aop-reference-model>

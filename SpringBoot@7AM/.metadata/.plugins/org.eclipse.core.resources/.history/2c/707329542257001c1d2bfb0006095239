@@ -1,0 +1,12 @@
+package com.example.service;
+
+import java.util.List;
+
+import com.example.model.Model;
+
+public interface ProductService {
+
+	public String inserData();
+	public int getRowCount();
+	public List<Model>
+}

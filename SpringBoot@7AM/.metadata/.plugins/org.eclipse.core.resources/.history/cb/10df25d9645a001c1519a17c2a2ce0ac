@@ -1,0 +1,15 @@
+package com.example.registry;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.netflix.discovery.DiscoveryClient;
+
+public class PaymentConsumer {
+
+	@Autowired
+	DiscoveryClient client;
+	
+	public void payConsumer() {
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.example.consumer;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class CompanyConsumer {
+
+	@Autowired
+	DiscoveryClient client;
+	
+	public String vendorConsume() {
+		client.getInstan
+		return "";
+	}
+}

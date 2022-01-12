@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.example.model&apos; to &apos;34_MS_FeignClient_Branch_ConsumerClient/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;34_MS_FeignClient_Company_ProducerClient&apos;&#x0D;&#x0A;- Destination element: &apos;34_MS_FeignClient_Branch_ConsumerClient/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;34_MS_FeignClient_Company_ProducerClient/src/main/java/com.example.model&apos;" description="Copy package" destination="=34_MS_FeignClient_Branch_ConsumerClient/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.model" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1639329114212" version="1.0"/>
+</session>

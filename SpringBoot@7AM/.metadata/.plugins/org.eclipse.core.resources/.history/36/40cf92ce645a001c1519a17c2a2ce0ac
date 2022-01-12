@@ -1,0 +1,10 @@
+package com.example.registry;
+
+public class PaymentConsumer {
+
+	
+	
+	public void payConsumer() {
+		
+	}
+}

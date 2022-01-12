@@ -1,0 +1,7 @@
+#server port Number
+server.port=9098
+
+#MySQL DB Detsils
+spring.datasource.username=root
+spring.datasource.password=shiv
+spring.datasource.url=jdbc.mysql//
